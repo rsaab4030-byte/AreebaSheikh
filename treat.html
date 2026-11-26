@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treat Voucher For Areeba Shaikh 🎁</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="ambientCanvas"></canvas>
+  <nav class="top-nav">
+    <a href="index.html" class="nav-link">💛 Sorry Card</a>
+    <a href="reasons.html" class="nav-link">✨ 5 Reasons</a>
+    <a href="treat.html" class="nav-link active">🎁 Treat Voucher</a>
+    <a href="message.html" class="nav-link">💌 Dil Ki Baat</a>
+  </nav>
+  <div class="card-wrapper">
+    <div class="secret-content">
+      <div>
+        <div class="badge">🎁 Golden Voucher • Areeba Shaikh 🎁</div>
+        <div class="heart-icon">🎁</div>
+        <h1>Special Treat Pass</h1>
+        <p class="message">Areeba Shaikh, apni pasand ki treat chunein aur direct WhatsApp par claim karein!</p>
+        <div class="treat-box">
+          <div class="treat-grid">
+            <div class="treat-item selected" onclick="selectTreat(this, 'Chocolates 🍫')">🍫 Chocolates</div>
+            <div class="treat-item" onclick="selectTreat(this, 'Ice Cream 🍦')">🍦 Ice Cream</div>
+            <div class="treat-item" onclick="selectTreat(this, 'Favorite Khana 🍕')">🍕 Favorite Khana</div>
+            <div class="treat-item" onclick="selectTreat(this, 'Choti Si Shopping 🛍️')">🛍️ Shopping</div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-forgive" onclick="forgiveMe()">📲 Claim Treat on WhatsApp</button>
+      <div class="status-text" id="statusText"></div>
+      <a class="wa-btn" id="waBtn" target="_blank">📲 WhatsApp Kholo</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

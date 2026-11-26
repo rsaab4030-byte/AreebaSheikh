@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>A Special Surprise For Areeba Shaikh 💛</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="ambientCanvas"></canvas>
+  <canvas id="confettiCanvas"></canvas>
+
+  <nav class="top-nav">
+    <a href="index.html" class="nav-link active">💛 Sorry Card</a>
+    <a href="reasons.html" class="nav-link">✨ 5 Reasons</a>
+    <a href="treat.html" class="nav-link">🎁 Treat Voucher</a>
+    <a href="message.html" class="nav-link">💌 Dil Ki Baat</a>
+  </nav>
+
+  <div class="top-bar">
+    <button class="pill-btn" onclick="setRecipientName()">✏️ Naam Badlein</button>
+    <button class="pill-btn" onclick="resetDoors()">🔒 Dobara Lock Karein</button>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="secret-content">
+      <div>
+        <div class="badge">✨ Special Apology For Areeba Shaikh ✨</div>
+        <div class="heart-icon">💛</div>
+        <h1 id="cardHeading">I'm Really Sorry, Areeba Shaikh!</h1>
+        <p class="message">
+          Areeba Shaikh, agar meri kisi baat ya galti se aapka dil dukha ho to dil se maafi chahta hoon.
+          Aapki narazgi bilkul achi nahi lagti — jaldi se muskura dein kyunki aapki khushi sab se zyada zaroori hai!
+        </p>
+      </div>
+
+      <div class="treat-box">
+        <div class="treat-title">🎁 Maafi ke saath apni Treat chunein:</div>
+        <div class="treat-grid">
+          <div class="treat-item selected" onclick="selectTreat(this, 'Chocolates 🍫')">🍫 Chocolates</div>
+          <div class="treat-item" onclick="selectTreat(this, 'Ice Cream 🍦')">🍦 Ice Cream</div>
+          <div class="treat-item" onclick="selectTreat(this, 'Favorite Khana 🍕')">🍕 Favorite Khana</div>
+          <div class="treat-item" onclick="selectTreat(this, 'Choti Si Shopping 🛍️')">🛍️ Shopping</div>
+        </div>
+      </div>
+
+      <div style="width: 100%;">
+        <div class="actions">
+          <button class="btn-forgive" onclick="forgiveMe()">Maaf Kiya 😊💛</button>
+          <button class="btn-mad" id="madBtn" onmouseover="dodgeBtn()" onclick="dodgeBtn()">Abhi Naraz Hoon 😒</button>
+        </div>
+        <div class="status-text" id="statusText"></div>
+        <a class="wa-btn" id="waBtn" target="_blank">📲 WhatsApp par Jawab Bhejein</a>
+      </div>
+    </div>
+
+    <div class="door-overlay" id="doorOverlay">
+      <div class="door door-left"></div>
+      <div class="door door-right"></div>
+
+      <div class="scanner-center" id="scannerBtn">
+        <div class="fp-ring" id="fpRing">
+          <div class="scan-line"></div>
+          <svg class="fp-svg" viewBox="0 0 24 24">
+            <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+          </svg>
+        </div>
+        <div class="scanner-label" id="scanLabel">👆 Finger Yahan Rakhein</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
